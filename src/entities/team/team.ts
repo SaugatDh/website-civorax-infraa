@@ -159,16 +159,16 @@ export const teamMembers: TeamMember[] = [
     image: "/images/team/webp_images/Sabin_BK.webp",
   },
 
-  // // 3D Visualization
-  //   {
-  //   slug: "dheeraj-uparkoti",
-  //   name: "Dheeraj Uparkoti",
-  //   qualification: "B.E. Civil Engineering",
-  //   role: "Structural Engineer",
-  //   expertise: ["Steel Structures", "RCC Design", "Site Supervision"],
-  //   department: "engineering",
-  //   image: "/images/team/webp_images/DheerajUparkoti.webp",
-  // },
+  // 3D Visualization
+    {
+    slug: "dheeraj-uparkoti",
+    name: "Dheeraj Uparkoti",
+    qualification: "B.E. Civil Engineering",
+    role: "Structural Engineer",
+    expertise: ["Steel Structures", "RCC Design", "Site Supervision"],
+    department: "engineering",
+    image: "/images/team/webp_images/DheerajUparkoti.webp",
+  },
 
 
   // Quantity Surveying
