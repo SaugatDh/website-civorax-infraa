@@ -68,28 +68,53 @@ export const teamDepartments: TeamDepartment[] = [
     description:
       "Finance, compliance, and the operational backbone of the company.",
   },
+   {
+    slug: "it-systems",
+    label: "IT and Systems",
+    description:
+      "Research and development, IT systems and digital infrastructure for project delivery.",
+  },
   {
     slug: "client-relations",
     label: "Client Relations",
     description:
       "Communication, follow-ups, and a clear point of contact for every client.",
   },
+  
   {
     slug: "documentation-support",
     label: "Documentation & Support",
     description:
       "Records, drawings, and documentation that keep every project organized.",
   },
-  {
-    slug: "it-systems",
-    label: "IT and Systems",
-    description:
-      "Research and development, IT systems and digital infrastructure for project delivery.",
-  },
+ 
 ];
 
 export const teamMembers: TeamMember[] = [
   // Architecture & Design
+
+
+  {
+    slug: "ranju-sodari",
+    name: "Ranju Sodari",
+    qualification: "Bachelor of Architecture",
+    role: "Architect",
+    expertise: ["Residential Design", "Concept Design"],
+    department: "architecture-design",
+    image: "/images/team/webp_images/RanjuSodari.webp",
+  },
+  {
+    slug: "kabita-parsain",
+    name: "Kabita Prasain",
+    qualification: "Bachelor of Architecture",
+    role: "Architect",
+    expertise: ["Residential Design", "Concept Design"],
+    department: "architecture-design",
+    image: "/images/team/webp_images/KabitaParsain.webp",
+  },
+
+
+
 
 
   // Engineering
@@ -164,9 +189,9 @@ export const teamMembers: TeamMember[] = [
     slug: "dheeraj-uparkoti",
     name: "Dheeraj Uparkoti",
     qualification: "B.E. Civil Engineering",
-    role: "Structural Engineer",
+    role: "3D Visualization & Design",
     expertise: ["Steel Structures", "RCC Design", "Site Supervision"],
-    department: "engineering",
+    department: "3d-visualization",
     image: "/images/team/webp_images/DheerajUparkoti.webp",
   },
 
@@ -184,7 +209,34 @@ export const teamMembers: TeamMember[] = [
 
 
   // Administration & Finance
-
+ {
+    slug: "babin-thapa",
+    name: "Babin Thapa",
+    qualification: "MBA, Finance",
+    role: "Finance & Admin",
+    expertise: ["Finance", "Operations", "Administration"],
+    department: "administration-finance",
+    image: "/images/team/webp_images/BabinThapa.webp",
+  },
+//  IT and Systems
+  {
+    slug: "saugat-dhungana",
+    name: "Saugat Dhungana",
+    qualification: "Computer Engineering",
+    role: "Research and Analyst",
+    expertise: ["IT Systems", "Research and Development", "Systems"],
+    department: "it-systems",
+    image: "/images/team/webp_images/SaugatDhungana.webp",
+  },
+  {
+    slug: "shishir-uparkoti",
+    name: "Shishir Uparkoti",
+    qualification: "B.E. Civil Engineering",
+    role: "System Maintainence",
+    expertise: ["Documentation", "Drawings"],
+    department: "it-systems",
+    image: "/images/team/webp_images/ShisirUparkoti.webp",
+  },
   // Client Relations
    {
     slug: "Sudip-Bhandari",
@@ -216,64 +268,8 @@ export const teamMembers: TeamMember[] = [
     image: avatar("men/85"),
   },
 
-  // Real team – webp_images (local assets)
 
-  {
-    slug: "babin-thapa",
-    name: "Babin Thapa",
-    qualification: "MBA, Finance",
-    role: "Finance & Admin",
-    expertise: ["Finance", "Operations", "Administration"],
-    department: "administration-finance",
-    image: "/images/team/webp_images/BabinThapa.webp",
-  },
 
-  // {
-  //   slug: "bipul-chaudhary",
-  //   name: "Bipul Chaudhary",
-  //   qualification: "B.E. Civil Engineering",
-  //   role: "Site Engineer",
-  //   expertise: ["Execution", "Quality Checks"],
-  //   department: "engineering",
-  //   image: "/images/team/webp_images/BipulChaudhary.webp",
-  // },
-  {
-    slug: "ranju-sodari",
-    name: "Ranju Sodari",
-    qualification: "Bachelor of Architecture",
-    role: "Architect",
-    expertise: ["Residential Design", "Concept Design"],
-    department: "architecture-design",
-    image: "/images/team/webp_images/RanjuSodari.webp",
-  },
-  {
-    slug: "kabita-parsain",
-    name: "Kabita Prasain",
-    qualification: "Bachelor of Architecture",
-    role: "Architect",
-    expertise: ["Residential Design", "Concept Design"],
-    department: "architecture-design",
-    image: "/images/team/webp_images/KabitaParsain.webp",
-  },
-
-  {
-    slug: "saugat-dhungana",
-    name: "Saugat Dhungana",
-    qualification: "Computer Engineering",
-    role: "Research and Analyst",
-    expertise: ["IT Systems", "Research and Development", "Systems"],
-    department: "it-systems",
-    image: "/images/team/webp_images/SaugatDhungana.webp",
-  },
-  {
-    slug: "shishir-ghimire",
-    name: "Shishir Ghimire",
-    qualification: "B.E. Civil Engineering",
-    role: "System Maintainence",
-    expertise: ["Documentation", "Drawings"],
-    department: "it-systems",
-    image: "/images/team/webp_images/ShishirGhimire.webp",
-  },
 
 ];
 
