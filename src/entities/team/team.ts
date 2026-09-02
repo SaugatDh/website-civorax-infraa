@@ -247,26 +247,26 @@ export const teamMembers: TeamMember[] = [
     department: "client-relations",
     image: "/images/team/webp_images/Sudip  Bhandari.webp",
   },
-  {
-    slug: "Sujan-Karki",
-    name: "Sujan Karki",
-    qualification: "BBA",
-    role: "Client Relations",
-    expertise: ["Client Support", "Communication", "Follow-ups"],
-    department: "client-relations",
-    image: avatar("men/22"),
-  },
+  // {
+  //   slug: "Sujan-Karki",
+  //   name: "Sujan Karki",
+  //   qualification: "BBA",
+  //   role: "Client Relations",
+  //   expertise: ["Client Support", "Communication", "Follow-ups"],
+  //   department: "client-relations",
+  //   image: avatar("men/22"),
+  // },
 
   // Documentation & Support
-  {
-    slug: "arun-khadka",
-    name: "Arun Khadka",
-    qualification: "B.E. Civil Engineering",
-    role: "Documentation Engineer",
-    expertise: ["Documentation", "Drawings", "Records"],
-    department: "documentation-support",
-    image: avatar("men/85"),
-  },
+  // {
+  //   slug: "arun-khadka",
+  //   name: "Arun Khadka",
+  //   qualification: "B.E. Civil Engineering",
+  //   role: "Documentation Engineer",
+  //   expertise: ["Documentation", "Drawings", "Records"],
+  //   department: "documentation-support",
+  //   image: avatar("men/85"),
+  // },
 
 
 
