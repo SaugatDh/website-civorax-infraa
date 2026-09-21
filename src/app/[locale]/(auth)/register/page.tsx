@@ -1,5 +1,5 @@
-import RegisterForm from "@/features/auth/components/RegisterForm";
+import PortalAccess from "@/features/portal-access/components/PortalAccess";
 
 export default function RegisterPage() {
-  return <RegisterForm />;
+  return <PortalAccess />;
 }

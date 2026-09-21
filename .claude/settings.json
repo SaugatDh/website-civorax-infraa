@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Website/civorax-api/app/Filament/Resources/**)",
+      "Read(//d/Website/civorax-api/database/seeders/**)"
+    ],
+    "additionalDirectories": [
+      "D:\\Website\\civorax-api\\app\\Providers\\Filament",
+      "D:\\Website\\civorax-api\\app\\Filament\\Resources",
+      "D:\\Website\\civorax-api\\database\\seeders"
+    ]
+  }
+}
