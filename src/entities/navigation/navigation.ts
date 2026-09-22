@@ -6,6 +6,7 @@ export const navLinks = [
   { key: "ourWork",  href: "/our-work" },
   { key: "process",  href: "/process" },
   { key: "about",    href: "/about" },
+  { key: "blog",     href: "/blog" },
   { key: "contact",  href: "/contact" },
 ] as const;
 

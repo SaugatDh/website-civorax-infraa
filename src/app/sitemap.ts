@@ -3,6 +3,7 @@ import { locales } from "@/configs/locale.config";
 import { siteConfig } from "@/configs/site.config";
 import { categories } from "@/entities/projects/categories";
 import { projects } from "@/entities/projects/projects";
+import { blogPosts } from "@/entities/blog/posts";
 
 const STATIC_PATHS = ["", "/services", "/about", "/contact", "/process", "/our-work", "/blog"];
 
@@ -48,6 +49,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(project.coverImage.startsWith("http")
           ? { images: [project.coverImage] }
           : {}),
+      });
+    }
+    for (const post of blogPosts) {
+      entries.push({
+        url: `${base}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.updated),
+        changeFrequency: "monthly",
+        priority: 0.6,
       });
     }
   }
