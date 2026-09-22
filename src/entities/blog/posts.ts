@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Choose a Construction Company in Nepal",
     description:
       "Checklist for choosing a builder in Nepal: licensed engineers, BOQ contracts, supervision, warranty, municipal compliance — and red flags of low-bid contractors.",
-    keywords: ["best construction company in Nepal", "how to choose a builder", "civil contractor selection checklist"],
+    keywords: ["best construction company in Nepal", "best construction company in Koshi", "how to choose a builder Itahari", "civil contractor selection checklist"],
     date: "2026-09-01",
     updated: "2026-09-22",
     category: "Guides",
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
     title: "I Have 3 Aana of Land — What House Can I Build?",
     description:
       "Realistic room layouts, setbacks and floor footprints for 3, 5 and 10 aana plots in Nepal, plus parking, light wells and vertical planning tips.",
-    keywords: ["house design for 3 aana", "4 aana house plan", "small plot house design Nepal"],
+    keywords: ["house design for 3 aana", "4 aana house plan Itahari", "small plot house design Dharan", "house plan Biratnagar"],
     date: "2026-09-02",
     updated: "2026-09-22",
     category: "House plans",
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     title: "Best House Designs in 2026",
     description:
       "2026 home trends for Nepal: open-plan living, double-height spaces, glass and concrete textures, passive solar design and rooftop terraces.",
-    keywords: ["best house design 2026", "modern home trends in Nepal", "contemporary residential architecture"],
+    keywords: ["best house design 2026", "best house designs Itahari", "modern home trends Koshi Nepal", "contemporary residential architecture"],
     date: "2026-09-03",
     updated: "2026-09-22",
     category: "Trends",
@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
     title: "Modern House Designs with 3D Plans & Pictures",
     description:
       "How exterior elevations, 3D renderings and 2D floor plans fit together — materials, louvers, cladding and turning visuals into buildable drawings.",
-    keywords: ["modern house design", "3D house elevation", "bungalow designs Nepal"],
+    keywords: ["modern house design Itahari", "3D house elevation Dharan", "bungalow designs Biratnagar", "house designs Birtamode"],
     date: "2026-09-04",
     updated: "2026-09-22",
     category: "Design",
@@ -213,8 +213,8 @@ export const blogPosts: BlogPost[] = [
     slug: "house-construction-cost-per-sqft-nepal",
     title: "How Much Does Construction Cost per Square Foot?",
     description:
-      "Transparent per-sq-ft ranges for standard, premium and luxury builds in Nepal, phase-wise breakdowns and Kathmandu vs Terai vs hills variance.",
-    keywords: ["construction cost Nepal", "house building price per sq ft", "ghar banaune kharcha"],
+      "Transparent per-sq-ft ranges for standard, premium and luxury builds in Koshi, Nepal, with phase-wise breakdowns and Itahari vs Dharan vs Biratnagar variance.",
+    keywords: ["construction cost Itahari", "house building price per sq ft Koshi", "ghar banaune kharcha", "construction rate Dharan"],
     date: "2026-09-05",
     updated: "2026-09-22",
     category: "Costs",
@@ -248,7 +248,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Geography matters",
         paragraphs: [
-          "Kathmandu Valley, Terai plains and hill districts differ in material transport, labor and foundation needs. A site visit and soil check beat any online average — book an estimate before fixing your budget.",
+          "Itahari, Dharan, Damak, Biratnagar and Birtamode differ in material transport, labor and foundation needs across Sunsari, Morang and Jhapa. A site visit and soil check beat any online average — book an estimate before fixing your budget.",
         ],
       },
     ],
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     title: "My House Is Small — How to Make It Look Modern",
     description:
       "Space-expanding interiors for small Nepali homes: neutral palettes, continuous flooring, mirrors, multi-functional joinery and layered lighting.",
-    keywords: ["small house interior design", "how to make small rooms look bigger", "space saving ideas Nepal"],
+    keywords: ["small house interior design Itahari", "how to make small rooms look bigger", "space saving ideas Biratnagar"],
     date: "2026-09-06",
     updated: "2026-09-22",
     category: "Interiors",
@@ -293,7 +293,7 @@ export const blogPosts: BlogPost[] = [
     title: "Interior Design & Material Costs in Nepal",
     description:
       "Real-market options and price drivers in Nepal: plywood vs MDF, veneer vs solid wood, tiles vs SPC, plus false ceiling, kitchen and paneling estimates.",
-    keywords: ["interior design Nepal", "false ceiling cost", "modular kitchen price Nepal"],
+    keywords: ["interior design Itahari", "false ceiling cost Dharan", "modular kitchen price Biratnagar"],
     date: "2026-09-07",
     updated: "2026-09-22",
     category: "Costs",

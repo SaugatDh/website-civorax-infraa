@@ -25,7 +25,7 @@ export default function TwitterImage() {
           House Designs &amp; Construction in Nepal
         </div>
         <div style={{ fontSize: 32, marginTop: 24, opacity: 0.8 }}>
-          Itahari · Dharan · Kathmandu — 3D plans, cost estimates, turnkey homes
+          Itahari · Dharan · Damak · Biratnagar · Birtamode — house designs, cost estimates, turnkey homes
         </div>
       </div>
     ),

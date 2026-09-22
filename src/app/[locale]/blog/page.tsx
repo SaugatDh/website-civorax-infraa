@@ -40,7 +40,7 @@ export default function BlogIndex() {
       </h1>
       <p className="mt-4 max-w-2xl text-[#4b5563]">
         Practical answers on builders, plot sizes, designs, costs and interiors — written for
-        homeowners in Itahari, Dharan and Kathmandu.
+        homeowners in Itahari, Dharan, Damak, Biratnagar and Birtamode.
       </p>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {blogPosts.map((post) => (

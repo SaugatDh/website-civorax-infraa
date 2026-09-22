@@ -16,7 +16,7 @@ export function OrganizationJsonLd() {
       addressRegion: "Koshi",
       addressCountry: "NP",
     },
-    areaServed: ["Itahari", "Dharan", "Morang", "Kathmandu", "Nepal"],
+    areaServed: ["Itahari", "Dharan", "Damak", "Biratnagar", "Birtamode", "Koshi", "Nepal"],
     sameAs: [],
   };
   return (
