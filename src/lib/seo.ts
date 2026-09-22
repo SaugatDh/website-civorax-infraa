@@ -26,7 +26,7 @@ export async function buildPageMetadata(
   const path = KEY_TO_PATH[key];
   const canonical = canonicalUrl(locale as Locale, path);
   const languages = alternateUrls(path);
-  const image = opts?.image ?? "/images/home/hero-fallback.jpg";
+  const image = opts?.image ?? "/opengraph-image";
 
   return {
     title,
