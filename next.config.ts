@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "randomuser.me" },
     ],
   },
+  allowedDevOrigins: ["192.168.100.5"],
   async headers() {
     return [
       {

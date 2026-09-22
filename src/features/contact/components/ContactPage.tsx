@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { company, createWhatsappLink } from "@/entities/company";
 import SocialLinks from "@/shared/layout/SocialLinks";
+import { submitInquiryAction } from "../server-actions/contact.actions";
 
 const siteImage =
   "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85";
@@ -41,6 +42,7 @@ export default function ContactPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const whatsappHref = useMemo(() => {
@@ -117,10 +119,32 @@ Note: I can send site photos here if needed.`;
     setSuccessMessage("");
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function recordInquiry(channel: "email" | "whatsapp") {
+    const result = await submitInquiryAction({
+      fullname: form.fullName.trim(),
+      contact: form.phone.trim(),
+      address: form.location.trim(),
+      contact_channel: channel,
+      message: form.message.trim(),
+      service: form.service,
+      budget: form.budget,
+    });
+
+    if (!result.success) {
+      // Non-blocking: the client's mailto/WhatsApp action still proceeds even if
+      // this background record fails, so we just log it for now.
+      console.error("Failed to record inquiry:", result.error);
+    }
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (!validateForm()) return;
+
+    setIsSubmitting(true);
+    await recordInquiry("email");
+    setIsSubmitting(false);
 
     const subject = encodeURIComponent(
       `New Project Inquiry from ${form.fullName.trim()}`
@@ -145,9 +169,14 @@ Note: If a site photo was selected, ask the client to send it through WhatsApp o
     );
   }
 
-  function handleWhatsAppSubmit() {
+  async function handleWhatsAppSubmit() {
     setSuccessMessage("");
     if (!validateForm()) return;
+
+    setIsSubmitting(true);
+    await recordInquiry("whatsapp");
+    setIsSubmitting(false);
+
     window.open(whatsappHref, "_blank", "noopener,noreferrer");
   }
 
@@ -330,9 +359,10 @@ Note: If a site photo was selected, ask the client to send it through WhatsApp o
 
               <button
                 type="submit"
-                className="flex h-[56px] w-full items-center justify-center gap-3 rounded-xl bg-[#20b486] px-6 text-sm font-bold text-[#003f2c] shadow-[0_18px_50px_rgba(32,180,134,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#006c4e] hover:text-white"
+                disabled={isSubmitting}
+                className="flex h-[56px] w-full items-center justify-center gap-3 rounded-xl bg-[#20b486] px-6 text-sm font-bold text-[#003f2c] shadow-[0_18px_50px_rgba(32,180,134,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#006c4e] hover:text-white disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0"
               >
-                Submit Inquiry by Email
+                {isSubmitting ? "Submitting..." : "Submit Inquiry by Email"}
                 <Send size={18} />
               </button>
 
@@ -364,7 +394,8 @@ Note: If a site photo was selected, ask the client to send it through WhatsApp o
                 <button
                   type="button"
                   onClick={handleWhatsAppSubmit}
-                  className="mt-6 inline-flex h-[50px] items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                  disabled={isSubmitting}
+                  className="mt-6 inline-flex h-[50px] items-center justify-center gap-3 rounded-full bg-[#25D366] px-6 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 active:scale-95 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100"
                 >
                   <MessageCircle size={19} />
                   Send on WhatsApp

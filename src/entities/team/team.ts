@@ -68,28 +68,53 @@ export const teamDepartments: TeamDepartment[] = [
     description:
       "Finance, compliance, and the operational backbone of the company.",
   },
+   {
+    slug: "it-systems",
+    label: "IT and Systems",
+    description:
+      "Research and development, IT systems and digital infrastructure for project delivery.",
+  },
   {
     slug: "client-relations",
     label: "Client Relations",
     description:
       "Communication, follow-ups, and a clear point of contact for every client.",
   },
+  
   {
     slug: "documentation-support",
     label: "Documentation & Support",
     description:
       "Records, drawings, and documentation that keep every project organized.",
   },
-  {
-    slug: "it-systems",
-    label: "IT and Systems",
-    description:
-      "Research and development, IT systems and digital infrastructure for project delivery.",
-  },
+ 
 ];
 
 export const teamMembers: TeamMember[] = [
   // Architecture & Design
+
+
+  {
+    slug: "ranju-sodari",
+    name: "Ranju Sodari",
+    qualification: "Bachelor of Architecture",
+    role: "Architect",
+    expertise: ["Residential Design", "Concept Design"],
+    department: "architecture-design",
+    image: "/images/team/webp_images/RanjuSodari.webp",
+  },
+  {
+    slug: "kabita-parsain",
+    name: "Kabita Prasain",
+    qualification: "Bachelor of Architecture",
+    role: "Architect",
+    expertise: ["Residential Design", "Concept Design"],
+    department: "architecture-design",
+    image: "/images/team/webp_images/KabitaParsain.webp",
+  },
+
+
+
 
 
   // Engineering
@@ -159,16 +184,16 @@ export const teamMembers: TeamMember[] = [
     image: "/images/team/webp_images/Sabin_BK.webp",
   },
 
-  // // 3D Visualization
-  //   {
-  //   slug: "dheeraj-uparkoti",
-  //   name: "Dheeraj Uparkoti",
-  //   qualification: "B.E. Civil Engineering",
-  //   role: "Structural Engineer",
-  //   expertise: ["Steel Structures", "RCC Design", "Site Supervision"],
-  //   department: "engineering",
-  //   image: "/images/team/webp_images/DheerajUparkoti.webp",
-  // },
+  // 3D Visualization
+    {
+    slug: "dheeraj-uparkoti",
+    name: "Dheeraj Uparkoti",
+    qualification: "B.E. Civil Engineering",
+    role: "3D Visualization & Design",
+    expertise: ["Steel Structures", "RCC Design", "Site Supervision"],
+    department: "3d-visualization",
+    image: "/images/team/webp_images/DheerajUparkoti.webp",
+  },
 
 
   // Quantity Surveying
@@ -184,41 +209,7 @@ export const teamMembers: TeamMember[] = [
 
 
   // Administration & Finance
-
-  // Client Relations
-   {
-    slug: "Sudip-Bhandari",
-    name: "Sudip Bhandari",
-    qualification: "BBA",
-    role: "Client Relations",
-    expertise: ["Client Support", "Communication", "Follow-ups"],
-    department: "client-relations",
-    image: "/images/team/webp_images/Sudip  Bhandari.webp",
-  },
-  {
-    slug: "Sujan-Karki",
-    name: "Sujan Karki",
-    qualification: "BBA",
-    role: "Client Relations",
-    expertise: ["Client Support", "Communication", "Follow-ups"],
-    department: "client-relations",
-    image: avatar("men/22"),
-  },
-
-  // Documentation & Support
-  {
-    slug: "arun-khadka",
-    name: "Arun Khadka",
-    qualification: "B.E. Civil Engineering",
-    role: "Documentation Engineer",
-    expertise: ["Documentation", "Drawings", "Records"],
-    department: "documentation-support",
-    image: avatar("men/85"),
-  },
-
-  // Real team – webp_images (local assets)
-
-  {
+ {
     slug: "babin-thapa",
     name: "Babin Thapa",
     qualification: "MBA, Finance",
@@ -227,35 +218,7 @@ export const teamMembers: TeamMember[] = [
     department: "administration-finance",
     image: "/images/team/webp_images/BabinThapa.webp",
   },
-
-  // {
-  //   slug: "bipul-chaudhary",
-  //   name: "Bipul Chaudhary",
-  //   qualification: "B.E. Civil Engineering",
-  //   role: "Site Engineer",
-  //   expertise: ["Execution", "Quality Checks"],
-  //   department: "engineering",
-  //   image: "/images/team/webp_images/BipulChaudhary.webp",
-  // },
-  {
-    slug: "ranju-sodari",
-    name: "Ranju Sodari",
-    qualification: "Bachelor of Architecture",
-    role: "Architect",
-    expertise: ["Residential Design", "Concept Design"],
-    department: "architecture-design",
-    image: "/images/team/webp_images/RanjuSodari.webp",
-  },
-  {
-    slug: "kabita-parsain",
-    name: "Kabita Prasain",
-    qualification: "Bachelor of Architecture",
-    role: "Architect",
-    expertise: ["Residential Design", "Concept Design"],
-    department: "architecture-design",
-    image: "/images/team/webp_images/KabitaParsain.webp",
-  },
-
+//  IT and Systems
   {
     slug: "saugat-dhungana",
     name: "Saugat Dhungana",
@@ -266,14 +229,47 @@ export const teamMembers: TeamMember[] = [
     image: "/images/team/webp_images/SaugatDhungana.webp",
   },
   {
-    slug: "shishir-ghimire",
-    name: "Shishir Ghimire",
+    slug: "shishir-uparkoti",
+    name: "Shishir Uparkoti",
     qualification: "B.E. Civil Engineering",
     role: "System Maintainence",
     expertise: ["Documentation", "Drawings"],
     department: "it-systems",
-    image: "/images/team/webp_images/ShishirGhimire.webp",
+    image: "/images/team/webp_images/ShisirUparkoti.webp",
   },
+  // Client Relations
+   {
+    slug: "Sudip-Bhandari",
+    name: "Sudip Bhandari",
+    qualification: "BBA",
+    role: "Client Relations",
+    expertise: ["Client Support", "Communication", "Follow-ups"],
+    department: "client-relations",
+    image: "/images/team/webp_images/Sudip  Bhandari.webp",
+  },
+  // {
+  //   slug: "Sujan-Karki",
+  //   name: "Sujan Karki",
+  //   qualification: "BBA",
+  //   role: "Client Relations",
+  //   expertise: ["Client Support", "Communication", "Follow-ups"],
+  //   department: "client-relations",
+  //   image: avatar("men/22"),
+  // },
+
+  // Documentation & Support
+  // {
+  //   slug: "arun-khadka",
+  //   name: "Arun Khadka",
+  //   qualification: "B.E. Civil Engineering",
+  //   role: "Documentation Engineer",
+  //   expertise: ["Documentation", "Drawings", "Records"],
+  //   department: "documentation-support",
+  //   image: avatar("men/85"),
+  // },
+
+
+
 
 ];
 

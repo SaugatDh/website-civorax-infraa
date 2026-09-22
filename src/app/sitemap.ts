@@ -4,7 +4,7 @@ import { siteConfig } from "@/configs/site.config";
 import { categories } from "@/entities/projects/categories";
 import { projects } from "@/entities/projects/projects";
 
-const STATIC_PATHS = ["", "/services", "/about", "/contact", "/process", "/our-work"];
+const STATIC_PATHS = ["", "/services", "/about", "/contact", "/process", "/our-work", "/academy"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;

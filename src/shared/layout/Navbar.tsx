@@ -3,7 +3,7 @@
 import Button from "@/shared/ui/Button";
 import LocaleLink from "@/shared/ui/LocaleLink";
 import { consultationLink, navLinks } from "@/entities/navigation";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, User, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -57,6 +57,13 @@ export default function Navbar() {
         {/* Desktop right */}
         <div className="hidden min-w-[330px] items-center justify-end gap-3 lg:flex">
           <LanguageSwitcher />
+          <LocaleLink
+            href="/login"
+            className="inline-flex h-[42px] items-center gap-2 rounded-[13px] border border-[#e5e2dd] px-4 text-[13px] font-semibold text-[#081d30] transition-colors hover:border-[#006c4e] hover:text-[#006c4e]"
+          >
+            <User size={15} />
+            Portal Login
+          </LocaleLink>
           <Button href={consultationLink} size="sm" className="h-[42px] rounded-[13px] bg-[#2f7d32] px-4 text-[13px] text-white hover:bg-[#256b2a] hover:text-white">
             {t("home")}
             <ArrowRight size={16} strokeWidth={2.4} />
@@ -91,6 +98,14 @@ export default function Navbar() {
                 {t(link.key)}
               </LocaleLink>
             ))}
+            <LocaleLink
+              href="/login"
+              onClick={() => setOpen(false)}
+              className="mt-3 inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-[#e5e2dd] text-sm font-semibold text-[#081d30]"
+            >
+              <User size={16} />
+              Portal Login
+            </LocaleLink>
             <LocaleLink
               href={consultationLink}
               onClick={() => setOpen(false)}
