@@ -15,7 +15,6 @@ const companyLinks = [
   { label: "About CivoraX", href: "/about" },
   { label: "Our Work", href: "/our-work" },
   { label: "Process", href: "/process" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

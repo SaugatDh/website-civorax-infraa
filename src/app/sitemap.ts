@@ -3,9 +3,8 @@ import { locales } from "@/configs/locale.config";
 import { siteConfig } from "@/configs/site.config";
 import { categories } from "@/entities/projects/categories";
 import { projects } from "@/entities/projects/projects";
-import { blogPosts } from "@/entities/blog/posts";
 
-const STATIC_PATHS = ["", "/services", "/about", "/contact", "/process", "/our-work", "/blog"];
+const STATIC_PATHS = ["", "/services", "/about", "/contact", "/process", "/our-work"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -18,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${base}/${locale}${path}`,
         lastModified: now,
         changeFrequency: path === "" ? "weekly" : "monthly",
-        priority: path === "" ? 1 : path === "/blog" ? 0.8 : 0.7,
+        priority: path === "" ? 1 : 0.7,
         alternates: {
           languages: {
             en: `${base}/en${path}`,
@@ -49,14 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(project.coverImage.startsWith("http")
           ? { images: [project.coverImage] }
           : {}),
-      });
-    }
-    for (const post of blogPosts) {
-      entries.push({
-        url: `${base}/${locale}/blog/${post.slug}`,
-        lastModified: new Date(post.updated),
-        changeFrequency: "monthly",
-        priority: 0.6,
       });
     }
   }

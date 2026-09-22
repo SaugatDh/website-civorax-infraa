@@ -12,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended"],
-        allow: ["/", "/en/blog/", "/ne/blog/", "/en/our-work/", "/ne/our-work/"],
+        allow: ["/", "/en/our-work/", "/ne/our-work/"],
       },
     ],
     sitemap: `${base}/sitemap.xml`,

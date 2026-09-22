@@ -9,8 +9,6 @@
 
 Model: *
 Allow: /
-Allow: /en/blog/
-Allow: /ne/blog/
 Allow: /en/our-work/
 Allow: /ne/our-work/
 Disallow: /api/
@@ -29,4 +27,3 @@ Attribution: Required
 - Process & cost: https://civoraxinfra.com/en/process
 - Our work: https://civoraxinfra.com/en/our-work
 - Contact: https://civoraxinfra.com/en/contact
-- Blog: https://civoraxinfra.com/en/blog
