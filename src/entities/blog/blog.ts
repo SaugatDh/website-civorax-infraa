@@ -186,3 +186,7 @@ export const blogCategories: { slug: BlogPost["category"]; label: string }[] = [
   { slug: "materials-engineering", label: "Materials & Engineering" },
   { slug: "interior-renovation", label: "Interior & Renovation" },
 ];
+export const featuredBlogPosts = blogPosts.filter((p) => p.featured);
+export const getBlogPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
+export const getBlogPostsByCategory = (category: string) => blogPosts.filter((p) => p.category === category);
+export const getRelatedBlogPosts = (post: BlogPost, limit = 3) => blogPosts.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, limit);
